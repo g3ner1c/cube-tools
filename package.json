@@ -1,0 +1,41 @@
+{
+	"name": "cubing-tools",
+	"description": "A bunch of speedcubing related tools, project for learning Svelte",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/g3ner1c/cubing-tools.git"
+	},
+	"author": "Sky 'g3ner1c' H.",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/g3ner1c/cubing-tools/issues"
+	},
+	"homepage": "https://github.com/g3ner1c/cubing-tools#readme",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"package": "svelte-kit package",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check --plugin-search-dir=. .",
+		"format": "prettier --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"prettier": "^2.6.2",
+		"prettier-plugin-svelte": "^2.7.0",
+		"svelte": "^3.44.0",
+		"svelte-check": "^2.7.1",
+		"svelte-preprocess": "^4.10.6",
+		"tslib": "^2.3.1",
+		"typescript": "^4.7.4",
+		"vite": "^3.0.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"cubing": "^0.28.1"
+	}
+}
