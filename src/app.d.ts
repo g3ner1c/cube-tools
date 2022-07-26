@@ -4,5 +4,5 @@
 // for information about these interfaces
 // and what to do when importing types
 declare global {
-	namespace App {}
+    namespace App {}
 }

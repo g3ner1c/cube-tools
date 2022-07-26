@@ -2,7 +2,7 @@
     import { setPlayer } from '$lib/lib';
     import type { TwistyPlayer } from 'cubing/twisty';
     import { onMount } from 'svelte';
-    
+
     let player: TwistyPlayer;
     onMount(() => {
         setPlayer(player, "R U R' (U' D) R2 U' R U' R' U R' U R2 D'");
@@ -11,14 +11,14 @@
 
 <svelte:head>
     <title>Cubing tools</title>
-    <meta name="description" content="Cubing tools">
+    <meta name="description" content="Cubing tools" />
 </svelte:head>
 
 <main>
     <h1>cubing-tools</h1>
     <p>look at this cool ga perm</p>
-    
-    <twisty-player bind:this="{player}"></twisty-player>
+
+    <twisty-player bind:this={player} />
 </main>
 
 <style>
@@ -36,7 +36,7 @@
         color: black;
         padding: 15px 32px;
         text-align: center;
-        
+
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
@@ -46,7 +46,6 @@
     } */
 
     twisty-player {
-        background: #BBBBBB;
+        background: #bbbbbb;
     }
-
 </style>
