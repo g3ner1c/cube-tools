@@ -9,6 +9,12 @@
 </svelte:head>
 
 <main>
+    <h1><a href="/">Home</a></h1>
+    <h2>
+        <i>OLL</i>
+        &nbsp;&middot;&nbsp;
+        <a href="/pll">PLL</a>
+    </h2>
     {#each Object.entries(oll) as [name, alg]}
         <AlgPlayer alg={alg.algs[0]} title="OLL {name}" showAlg showBorder />
     {/each}

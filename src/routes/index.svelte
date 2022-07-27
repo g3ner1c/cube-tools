@@ -1,8 +1,3 @@
-<script lang="ts">
-    import AlgPlayer from '$lib/AlgPlayer.svelte';
-    let alg: string = "R2' u' R U' R U R' u R2 f R' f' (U)";
-</script>
-
 <svelte:head>
     <title>Cubing tools</title>
     <meta name="description" content="Cubing tools" />
@@ -10,7 +5,11 @@
 
 <main>
     <h1>cubing-tools</h1>
-    <AlgPlayer {alg} title="yo look at this cool gc perm" showAlg />
+    <h2>
+        <a href="/oll">OLL</a>
+        &nbsp;&middot;&nbsp;
+        <a href="/pll">PLL</a>
+    </h2>
 </main>
 
 <style>
