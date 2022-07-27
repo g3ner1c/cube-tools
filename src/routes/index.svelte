@@ -1,12 +1,6 @@
 <script lang="ts">
-    import { setPlayer } from '$lib/lib';
-    import type { TwistyPlayer } from 'cubing/twisty';
-    import { onMount } from 'svelte';
-
-    let player: TwistyPlayer;
-    onMount(() => {
-        setPlayer(player, "R U R' (U' D) R2 U' R U' R' U R' U R2 D'");
-    });
+    import AlgPlayer from '$lib/AlgPlayer.svelte';
+    let alg: string = "R2' u' R U' R U R' u R2 f R' f' (U)";
 </script>
 
 <svelte:head>
@@ -16,17 +10,15 @@
 
 <main>
     <h1>cubing-tools</h1>
-    <p>look at this cool ga perm</p>
-
-    <twisty-player bind:this={player} />
+    <AlgPlayer {alg} title="yo look at this cool gc perm" showAlg />
 </main>
 
 <style>
     main {
-        margin: 0;
         display: grid;
+        justify-items: center;
         place-content: center;
-        gap: 1em;
+        text-align: center;
         font-family: sans-serif;
     }
 
@@ -44,8 +36,4 @@
         width: 100px;
         cursor: pointer;
     } */
-
-    twisty-player {
-        background: #bbbbbb;
-    }
 </style>

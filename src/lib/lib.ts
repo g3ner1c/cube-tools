@@ -1,18 +1,31 @@
-import 'cubing/twisty';
-import type { TwistyPlayer } from 'cubing/twisty';
+import { Alg } from 'cubing/alg';
 
-export function setPlayer(
-    player: TwistyPlayer,
-    alg: string,
-    setup?: string,
-    anchor?: string,
-    background?: string
-): void {
-    if (typeof setup === 'undefined') setup = 'x2';
-    if (typeof anchor === 'undefined') anchor = 'end';
-    if (typeof background === 'undefined') background = 'none';
-    player.setAttribute('alg', alg);
-    player.setAttribute('experimental-setup-alg', setup);
-    player.setAttribute('experimental-setup-anchor', anchor);
-    player.setAttribute('background', background);
+type Dict<T> = { [key: string]: T };
+
+// prettier-ignore
+export const MOVES = [
+    'R', 'r',
+    'L', 'l',
+    'U', 'u',
+    'D', 'd',
+    'F', 'f',
+    'B', 'b',
+    'M', 'm',
+    'E', 'e',
+    'S', 's',
+]
+
+export function algGen(alg: string): [number, string[]] {
+    // calculate alg gen stats
+    // ie. how many different moves are required to exec
+
+    let moves: string[] = [];
+
+    MOVES.forEach((move) => {
+        if (alg.includes(move)) {
+            moves.push(move);
+        }
+    });
+
+    return [moves.length, moves];
 }
