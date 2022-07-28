@@ -11,7 +11,7 @@
         <a href="/pll">PLL</a>
     </h2>
     <br />
-    <h2><a href="https://www.github.com/g3ner1c/cubing-tools">Github</a></h2>
+    <h2><a href="https://www.github.com/g3ner1c/cubing-tools">GitHub</a></h2>
 </main>
 
 <style>

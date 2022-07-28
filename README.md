@@ -1,5 +1,7 @@
-# [cubing-tools](https://cubing-tools.vercel.app/)
+# cubing-tools
 
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=cubing-tools)
+![GitHub](https://img.shields.io/github/license/g3ner1c/cubing-tools)
 
 A bunch of speedcubing related tools, project for learning Svelte
 
