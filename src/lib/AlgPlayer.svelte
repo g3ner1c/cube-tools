@@ -13,4 +13,4 @@
 
 <!-- just Player with different defaults that most cubers are used to -->
 
-<Player {alg} {setup} {anchor} {background} {showAlg} {title} {showBorder} />
+<Player {alg} {setup} {anchor} {background} {showAlg} {title} {showBorder} {...$$restProps} />

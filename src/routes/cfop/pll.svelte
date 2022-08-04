@@ -11,7 +11,7 @@
 <main>
     <h1><a href="/">Home</a></h1>
     <h2>
-        <a href="/oll">OLL</a>
+        <a href="/cfop/oll">OLL</a>
         &nbsp;&middot;&nbsp;
         <i>PLL</i>
     </h2>

@@ -1,8 +1,6 @@
 <script lang="ts">
     import 'cubing/twisty';
 
-    export let puzzle: string = '3x3x3';
-
     export let alg: string;
     export let setup: string;
     export let anchor: string;
@@ -21,12 +19,12 @@
     {/if}
 
     <twisty-player
-        {puzzle}
         {alg}
         experimental-setup-alg={setup}
         experimental-setup-anchor={anchor}
         background="none"
         style="background: {background};"
+        {...$$restProps}
     />
 
     {#if showAlg}
